@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7801D7A1CAB0D5B006AB70C"
-               BuildableName = "LiveGraph.framework"
-               BlueprintName = "LiveGraph"
-               ReferencedContainer = "container:LiveGraph.xcodeproj">
+               BlueprintIdentifier = "A7C9A6911CAB0E1D007356CF"
+               BuildableName = "LiveGraphExample.app"
+               BlueprintName = "LiveGraphExample"
+               ReferencedContainer = "container:iOS Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7801D841CAB0D5C006AB70C"
-               BuildableName = "LiveGraphTests.xctest"
-               BlueprintName = "LiveGraphTests"
-               ReferencedContainer = "container:LiveGraph.xcodeproj">
+               BlueprintIdentifier = "A7C9A6A51CAB0E1E007356CF"
+               BuildableName = "LiveGraphExampleTests.xctest"
+               BlueprintName = "LiveGraphExampleTests"
+               ReferencedContainer = "container:iOS Example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A7C9A6B01CAB0E1E007356CF"
+               BuildableName = "LiveGraphExampleUITests.xctest"
+               BlueprintName = "LiveGraphExampleUITests"
+               ReferencedContainer = "container:iOS Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7801D7A1CAB0D5B006AB70C"
-            BuildableName = "LiveGraph.framework"
-            BlueprintName = "LiveGraph"
-            ReferencedContainer = "container:LiveGraph.xcodeproj">
+            BlueprintIdentifier = "A7C9A6911CAB0E1D007356CF"
+            BuildableName = "LiveGraphExample.app"
+            BlueprintName = "LiveGraphExample"
+            ReferencedContainer = "container:iOS Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -61,15 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7801D7A1CAB0D5B006AB70C"
-            BuildableName = "LiveGraph.framework"
-            BlueprintName = "LiveGraph"
-            ReferencedContainer = "container:LiveGraph.xcodeproj">
+            BlueprintIdentifier = "A7C9A6911CAB0E1D007356CF"
+            BuildableName = "LiveGraphExample.app"
+            BlueprintName = "LiveGraphExample"
+            ReferencedContainer = "container:iOS Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7801D7A1CAB0D5B006AB70C"
-            BuildableName = "LiveGraph.framework"
-            BlueprintName = "LiveGraph"
-            ReferencedContainer = "container:LiveGraph.xcodeproj">
+            BlueprintIdentifier = "A7C9A6911CAB0E1D007356CF"
+            BuildableName = "LiveGraphExample.app"
+            BlueprintName = "LiveGraphExample"
+            ReferencedContainer = "container:iOS Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double LiveGraphVersionNumber;
 FOUNDATION_EXPORT const unsigned char LiveGraphVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LiveGraph/PublicHeader.h>
-
-
