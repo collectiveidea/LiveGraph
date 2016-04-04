@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7801D7A1CAB0D5B006AB70C"
-               BuildableName = "LiveGraph.framework"
-               BlueprintName = "LiveGraph"
+               BlueprintIdentifier = "A79755181CB301F000CEAD5F"
+               BuildableName = "LiveGraph tvOS.framework"
+               BlueprintName = "LiveGraph tvOS"
                ReferencedContainer = "container:LiveGraph.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7801D841CAB0D5C006AB70C"
-               BuildableName = "LiveGraphTests.xctest"
-               BlueprintName = "LiveGraphTests"
-               ReferencedContainer = "container:LiveGraph.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7801D7A1CAB0D5B006AB70C"
-            BuildableName = "LiveGraph.framework"
-            BlueprintName = "LiveGraph"
-            ReferencedContainer = "container:LiveGraph.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7801D7A1CAB0D5B006AB70C"
-            BuildableName = "LiveGraph.framework"
-            BlueprintName = "LiveGraph"
+            BlueprintIdentifier = "A79755181CB301F000CEAD5F"
+            BuildableName = "LiveGraph tvOS.framework"
+            BlueprintName = "LiveGraph tvOS"
             ReferencedContainer = "container:LiveGraph.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7801D7A1CAB0D5B006AB70C"
-            BuildableName = "LiveGraph.framework"
-            BlueprintName = "LiveGraph"
+            BlueprintIdentifier = "A79755181CB301F000CEAD5F"
+            BuildableName = "LiveGraph tvOS.framework"
+            BlueprintName = "LiveGraph tvOS"
             ReferencedContainer = "container:LiveGraph.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

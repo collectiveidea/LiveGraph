@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LiveGraph.xcscheme</key>
+		<key>LiveGraph tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>LiveGraph.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>A7801D841CAB0D5C006AB70C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A79755181CB301F000CEAD5F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

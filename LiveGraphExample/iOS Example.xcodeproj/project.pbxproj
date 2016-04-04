@@ -12,9 +12,31 @@
 		A7C9A69B1CAB0E1E007356CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C9A6991CAB0E1E007356CF /* Main.storyboard */; };
 		A7C9A69D1CAB0E1E007356CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C9A69C1CAB0E1E007356CF /* Assets.xcassets */; };
 		A7C9A6A01CAB0E1E007356CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C9A69E1CAB0E1E007356CF /* LaunchScreen.storyboard */; };
-		A7C9A6C41CAB0E41007356CF /* LiveGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C9A6C31CAB0E41007356CF /* LiveGraph.framework */; };
-		A7C9A6C51CAB0E41007356CF /* LiveGraph.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7C9A6C31CAB0E41007356CF /* LiveGraph.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A79754861CB3001A00CEAD5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A79754811CB3001A00CEAD5F /* LiveGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7801D7B1CAB0D5B006AB70C;
+			remoteInfo = LiveGraph;
+		};
+		A79754881CB3001A00CEAD5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A79754811CB3001A00CEAD5F /* LiveGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7801D851CAB0D5C006AB70C;
+			remoteInfo = LiveGraphTests;
+		};
+		A797548A1CB3002000CEAD5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A79754811CB3001A00CEAD5F /* LiveGraph.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A7801D7A1CAB0D5B006AB70C;
+			remoteInfo = LiveGraph;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A7C9A6C61CAB0E42007356CF /* Embed Frameworks */ = {
@@ -23,7 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A7C9A6C51CAB0E41007356CF /* LiveGraph.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A79754811CB3001A00CEAD5F /* LiveGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LiveGraph.xcodeproj; path = ../LiveGraph.xcodeproj; sourceTree = "<group>"; };
 		A7A6D6931CAB1C6400BDFECC /* LiveGraphPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LiveGraphPlayground.playground; sourceTree = "<group>"; };
 		A7C9A6921CAB0E1D007356CF /* LiveGraphExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveGraphExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C9A6951CAB0E1E007356CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +61,6 @@
 		A7C9A69C1CAB0E1E007356CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7C9A69F1CAB0E1E007356CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7C9A6A11CAB0E1E007356CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7C9A6C31CAB0E41007356CF /* LiveGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = LiveGraph.framework; path = "/Users/manlycode/Library/Developer/Xcode/DerivedData/LiveGraph-apiqikrloqowymgbdfeoqmkhursw/Build/Products/Debug-iphonesimulator/LiveGraph.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,18 +68,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7C9A6C41CAB0E41007356CF /* LiveGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A79754821CB3001A00CEAD5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A79754871CB3001A00CEAD5F /* LiveGraph.framework */,
+				A79754891CB3001A00CEAD5F /* LiveGraphTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A7C9A6891CAB0E1D007356CF = {
 			isa = PBXGroup;
 			children = (
+				A79754811CB3001A00CEAD5F /* LiveGraph.xcodeproj */,
 				A7A6D6931CAB1C6400BDFECC /* LiveGraphPlayground.playground */,
-				A7C9A6C31CAB0E41007356CF /* LiveGraph.framework */,
 				A7C9A6941CAB0E1E007356CF /* LiveGraphExample */,
 				A7C9A6931CAB0E1D007356CF /* Products */,
 			);
@@ -100,6 +129,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A797548B1CB3002000CEAD5F /* PBXTargetDependency */,
 			);
 			name = LiveGraphExample;
 			productName = LiveGraphExample;
@@ -132,12 +162,35 @@
 			mainGroup = A7C9A6891CAB0E1D007356CF;
 			productRefGroup = A7C9A6931CAB0E1D007356CF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A79754821CB3001A00CEAD5F /* Products */;
+					ProjectRef = A79754811CB3001A00CEAD5F /* LiveGraph.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A7C9A6911CAB0E1D007356CF /* LiveGraphExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A79754871CB3001A00CEAD5F /* LiveGraph.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LiveGraph.framework;
+			remoteRef = A79754861CB3001A00CEAD5F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A79754891CB3001A00CEAD5F /* LiveGraphTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LiveGraphTests.xctest;
+			remoteRef = A79754881CB3001A00CEAD5F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A7C9A6901CAB0E1D007356CF /* Resources */ = {
@@ -163,6 +216,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A797548B1CB3002000CEAD5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiveGraph;
+			targetProxy = A797548A1CB3002000CEAD5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A7C9A6991CAB0E1E007356CF /* Main.storyboard */ = {

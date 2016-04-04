@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:LiveGraph.xcodeproj">
+      location = "group:tvOS Example/tvOS Example.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/manlycode/git/collectiveidea/LiveGraph/LiveGraphExample/iOS Example.xcodeproj">
+      location = "group:LiveGraphExample/iOS Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:LiveGraph.xcodeproj">
    </FileRef>
 </Workspace>
