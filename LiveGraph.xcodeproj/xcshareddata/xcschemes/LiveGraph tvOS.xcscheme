@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A79755181CB301F000CEAD5F"
-               BuildableName = "LiveGraph tvOS.framework"
+               BuildableName = "LiveGraph.framework"
                BlueprintName = "LiveGraph tvOS"
                ReferencedContainer = "container:LiveGraph.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A79755181CB301F000CEAD5F"
-            BuildableName = "LiveGraph tvOS.framework"
+            BuildableName = "LiveGraph.framework"
             BlueprintName = "LiveGraph tvOS"
             ReferencedContainer = "container:LiveGraph.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A79755181CB301F000CEAD5F"
-            BuildableName = "LiveGraph tvOS.framework"
+            BuildableName = "LiveGraph.framework"
             BlueprintName = "LiveGraph tvOS"
             ReferencedContainer = "container:LiveGraph.xcodeproj">
          </BuildableReference>
