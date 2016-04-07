@@ -5,24 +5,16 @@ fastlane documentation
 sudo gem install fastlane
 ```
 # Available Actions
-## iOS
-### ios test
+### test
 ```
-fastlane ios test
+fastlane test
 ```
-Runs all the tests
-### ios beta
+Test the framework
+### release
 ```
-fastlane ios beta
+fastlane release
 ```
-Submit a new Beta Build to Apple TestFlight
-
-This will also make sure the profile is up to date
-### ios appstore
-```
-fastlane ios appstore
-```
-Deploy a new version to the App Store
+Release the framework
 
 ----
 
