@@ -1,0 +1,12 @@
+###################### More Options ######################
+# If you want to have even more control, check out the documentation
+# https://github.com/fastlane/fastlane/blob/master/deliver/Deliverfile.md
+
+
+###################### Automatically generated ######################
+# Feel free to remove the following line if you use fastlane (which you should)
+
+require File.expand_path(File.join(File.dirname(__FILE__), *['fastlane/itc_email']))
+username ENV["ITC_EMAIL"]
+
+app_identifier "com.collectiveidea.LiveGraph" # The bundle identifier of your app

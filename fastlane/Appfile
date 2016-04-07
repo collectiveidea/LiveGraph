@@ -1,0 +1,9 @@
+require File.expand_path(File.join(File.dirname(__FILE__), *['itc_email']))
+apple_id  ENV["ITC_EMAIL"]
+
+app_identifier "com.collectiveidea.LiveGraph" # The bundle identifier of your app
+
+team_id "3MXD5J8GME"  # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md
