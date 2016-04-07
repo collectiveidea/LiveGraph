@@ -1,1 +1,63 @@
-xcuserdata
+
+# Created by https://www.gitignore.io/api/xcode
+
+### Xcode ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+
+### Carthage ###
+# Carthage - A simple, decentralized dependency manager for Cocoa
+Carthage/
+
+# Created by https://www.gitignore.io/api/fastlane
+
+### fastlane ###
+# fastlane - A streamlined workflow tool for Cocoa deployment
+
+# fastlane specific
+fastlane/report.xml
+
+# deliver temporary files
+fastlane/Preview.html
+
+# snapshot generated screenshots
+fastlane/screenshots/
+fastlane/metadata/
+
+# scan temporary files
+fastlane/test_output
+
+.bundle/
+*.cer
+*.certSigningRequest
+*.p12
+Preview.html
+
+.itc-email
+
+*.mobileprovision
+
+*.ipa
+*.zip

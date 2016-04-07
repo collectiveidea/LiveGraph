@@ -473,7 +473,7 @@
 				INFOPLIST_FILE = "LiveGraph/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.collectiveidea.LiveGraph-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.collectiveidea.LiveGraph;
 				PRODUCT_NAME = LiveGraph;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -492,7 +492,7 @@
 				INFOPLIST_FILE = "LiveGraph/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.collectiveidea.LiveGraph-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.collectiveidea.LiveGraph;
 				PRODUCT_NAME = LiveGraph;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
