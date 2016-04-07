@@ -13,13 +13,13 @@ public class GraphView: UIView {
     
     public var xValues:[String] = ["•","•","•","•","•","•","•"]
     public var yValues:[[Float]] = [[0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0]]
-    var colors:[UIColor]! = GraphView.defaultColors(2)
+    public var maxYSteps:Int! = 6
+    public var colors:[UIColor]! = GraphView.defaultColors(2)
     
-    var leftGutterSize:CGFloat! = 36.0
-    var bottomGutterSize:CGFloat! = 30.0
-    var topGutterSize:CGFloat! = 15.0
+    public var leftGutterSize:CGFloat! = 36.0
+    public var bottomGutterSize:CGFloat! = 30.0
+    public var topGutterSize:CGFloat! = 15.0
     
-    var maxYSteps:Int! = 6
     var yStepIncrement:Float!
     var yMeasurement:Float!
     var xValuesDistanceApart:CGFloat = 45
@@ -56,9 +56,17 @@ public class GraphView: UIView {
         self.xValues = xVals
         self.yValues = yVals
         
-        scrollView = UIScrollView(frame: CGRect(x: leftGutterSize!, y: 0, width: CGRectGetWidth(frame) - leftGutterSize!, height: CGRectGetHeight(frame)))
+        scrollView = UIScrollView(
+            frame: CGRect(
+                x: leftGutterSize!,
+                y: 0, width: CGRectGetWidth(frame) - leftGutterSize!,
+                height: CGRectGetHeight(frame)
+            )
+        )
+        
         scrollView.alwaysBounceHorizontal = true
         scrollView.scrollEnabled = true
+        
         addSubview(scrollView)
         
         yValuesDistanceApart = (CGRectGetHeight(scrollView.frame) - bottomGutterSize! - topGutterSize!) / CGFloat(maxYSteps!)

@@ -15,10 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        lineGraph.plotGraph(
-            ["one", "two", "three"],
-            yVals: [[1.0, 2.0, 1.0], [3.0, 4.0, 5.0]]
-        )
+        
+        lineGraph.plotGraph(["one", "two", "three", "four", "five", "six"], yVals: [[1.0, 2.0, 3.0, 2.0, 2.0, 2.0], [3.5, 2.5, 1.5, 1.0, 1.0, 1.0]])
     }
 
     override func didReceiveMemoryWarning() {

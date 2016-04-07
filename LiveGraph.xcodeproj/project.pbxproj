@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7265A9A1CB6B94C00F47B6A /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7265A991CB6B94C00F47B6A /* Info-tvOS.plist */; };
 		A73234541CB6F602008A539B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9A6CA1CAB102D007356CF /* GraphView.swift */; };
 		A7801D7F1CAB0D5B006AB70C /* LiveGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = A7801D7E1CAB0D5B006AB70C /* LiveGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7801D861CAB0D5C006AB70C /* LiveGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7801D7B1CAB0D5B006AB70C /* LiveGraph.framework */; };
@@ -267,7 +266,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7265A9A1CB6B94C00F47B6A /* Info-tvOS.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
