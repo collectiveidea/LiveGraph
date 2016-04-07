@@ -6,7 +6,7 @@
 ###################### Automatically generated ######################
 # Feel free to remove the following line if you use fastlane (which you should)
 
-require File.expand_path(File.join(File.dirname(__FILE__), *['fastlane/itc_email']))
+require File.expand_path(File.join(File.dirname(__FILE__), *['fastlane/env']))
 username ENV["ITC_EMAIL"]
 
 app_identifier "com.collectiveidea.LiveGraph" # The bundle identifier of your app
