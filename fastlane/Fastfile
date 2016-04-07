@@ -17,7 +17,7 @@ default_platform :ios
 
 desc "Set version"
 lane :set_version do
-  increment_version_number(version_number: "0.0.6")
+  increment_version_number(version_number: ENV['VERSION_NUM'])
 end
 
 
