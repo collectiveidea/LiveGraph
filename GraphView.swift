@@ -11,67 +11,50 @@ import UIKit
 public class GraphView: UIView {
     var scrollView:UIScrollView!
     
-    public var xValues = [String]()
-    public var yValues = [[Float]]()
+    public var xValues:[String] = ["•","•","•","•","•","•","•"]
+    public var yValues:[[Float]] = [[0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0]]
+    var colors:[UIColor]! = GraphView.defaultColors(2)
     
-    var leftGutterSize:CGFloat!
-    var bottomGutterSize:CGFloat!
-    var topGutterSize:CGFloat!
-    var maxYSteps:Int!
+    var leftGutterSize:CGFloat! = 36.0
+    var bottomGutterSize:CGFloat! = 30.0
+    var topGutterSize:CGFloat! = 15.0
+    
+    var maxYSteps:Int! = 6
     var yStepIncrement:Float!
     var yMeasurement:Float!
     var xValuesDistanceApart:CGFloat = 45
     var xPositions = [CGFloat]()
     private var yValuesDistanceApart:CGFloat!
     var points = [[CGPoint]]()
-    var colors:[UIColor]!
+    
     
     override public func awakeFromNib() {
         super.awakeFromNib()
     }
     
+    public static func defaultColors(size: Int) -> [UIColor] {
+        var colorArray = [UIColor]()
+        if size < 2 {
+            colorArray += [UIColor(red: 251.0/255.0, green: 246.0/255.0, blue: 0.0/255.0, alpha: 1)]
+            colorArray += [UIColor(red: 24.0/255.0, green: 193.0/255.0, blue: 215.0/255.0, alpha: 1)]
+        } else {
+            for number in 0..<size {
+                if number % 2 == 0 {
+                    colorArray += [UIColor(red: 251.0/255.0, green: 246.0/255.0, blue: 0.0/255.0, alpha: 1)]
+                } else {
+                    colorArray += [UIColor(red: 24.0/255.0, green: 193.0/255.0, blue: 215.0/255.0, alpha: 1)]
+                }
+            }
+        }
+        
+        return colorArray
+    }
+    
     public func plotGraph(xVals:[String], yVals:[[Float]]) {
         destroyOldGraph()
         
-        if xVals.isEmpty {
-            xValues = ["•","•","•","•","•","•","•"]
-        } else {
-            xValues = xVals
-        }
-        if yVals.isEmpty {
-            yValues = [[0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0]]
-        } else {
-            yValues = yVals
-        }
-        if maxYSteps == nil {
-            maxYSteps = 6
-        }
-        if leftGutterSize == nil {
-            leftGutterSize = 36.0
-        }
-        if bottomGutterSize == nil {
-            bottomGutterSize = 30.0
-        }
-        if topGutterSize == nil {
-            topGutterSize = 15.0
-        }
-        if colors == nil {
-            var colorArray = [UIColor]()
-            if yValues.count < 2 {
-                colorArray += [UIColor(red: 251.0/255.0, green: 246.0/255.0, blue: 0.0/255.0, alpha: 1)]
-                colorArray += [UIColor(red: 24.0/255.0, green: 193.0/255.0, blue: 215.0/255.0, alpha: 1)]
-                colors = colorArray
-            } else {
-                for number in 0..<yValues.count {
-                    if number % 2 == 0 {
-                        colorArray += [UIColor(red: 251.0/255.0, green: 246.0/255.0, blue: 0.0/255.0, alpha: 1)]
-                    } else {
-                        colorArray += [UIColor(red: 24.0/255.0, green: 193.0/255.0, blue: 215.0/255.0, alpha: 1)]
-                    }
-                }
-                colors = colorArray
-            }
-        }
+        self.xValues = xVals
+        self.yValues = yVals
         
         scrollView = UIScrollView(frame: CGRect(x: leftGutterSize!, y: 0, width: CGRectGetWidth(frame) - leftGutterSize!, height: CGRectGetHeight(frame)))
         scrollView.alwaysBounceHorizontal = true
