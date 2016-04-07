@@ -22,18 +22,22 @@ end
 
 desc "Release the framework"
 lane :release do
+  ensure_git_branch(branch: "master")
+  ensure_git_status_clean
+
   scan(scheme: "LiveGraph iOS")
   increment_build_number(xcodeproj: "LiveGraph.xcodeproj")
   commit_version_bump(xcodeproj: "LiveGraph.xcodeproj")
-end
 
+  push_to_git_remote
+  set_github_release
+end
 
 platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
     # carthage
   end
-
 
   after_all do |lane|
     # This block is called, only if the executed lane was successful
