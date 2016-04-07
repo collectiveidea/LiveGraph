@@ -5,6 +5,11 @@ fastlane documentation
 sudo gem install fastlane
 ```
 # Available Actions
+### set_version
+```
+fastlane set_version
+```
+Set version
 ### test
 ```
 fastlane test
