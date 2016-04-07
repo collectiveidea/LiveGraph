@@ -30,7 +30,7 @@ lane :release do
   increment_version_number(xcodeproj: "LiveGraph.xcodeproj")
   commit_version_bump(xcodeproj: "LiveGraph.xcodeproj")
 
-  add_git_tag
+  add_git_tag(tag: "v#{get_version_number}")
   push_to_git_remote
   push_git_tags
 end
