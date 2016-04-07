@@ -581,6 +581,7 @@
 				A79754FF1CB3016F00CEAD5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A79755001CB3016F00CEAD5F /* Build configuration list for PBXNativeTarget "tvOS ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +590,7 @@
 				A79755021CB3016F00CEAD5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A79755031CB3016F00CEAD5F /* Build configuration list for PBXNativeTarget "tvOS ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -597,6 +599,7 @@
 				A79755051CB3016F00CEAD5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
