@@ -29,8 +29,9 @@ lane :release do
   increment_build_number(xcodeproj: "LiveGraph.xcodeproj")
   commit_version_bump(xcodeproj: "LiveGraph.xcodeproj")
 
+  add_git_tag
   push_to_git_remote
-  set_github_release
+  push_git_tags
 end
 
 platform :ios do
