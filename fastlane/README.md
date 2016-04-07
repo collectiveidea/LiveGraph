@@ -5,6 +5,14 @@ fastlane documentation
 sudo gem install fastlane
 ```
 # Available Actions
+### test
+```
+fastlane test
+```
+Test the framework
+
+----
+
 ## iOS
 ### ios test
 ```
