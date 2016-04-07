@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7265A9A1CB6B94C00F47B6A /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7265A991CB6B94C00F47B6A /* Info-tvOS.plist */; };
 		A7801D7F1CAB0D5B006AB70C /* LiveGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = A7801D7E1CAB0D5B006AB70C /* LiveGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7801D861CAB0D5C006AB70C /* LiveGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7801D7B1CAB0D5B006AB70C /* LiveGraph.framework */; };
 		A7801D8B1CAB0D5C006AB70C /* LiveGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7801D8A1CAB0D5C006AB70C /* LiveGraphTests.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7265A991CB6B94C00F47B6A /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "LiveGraph/Info-tvOS.plist"; sourceTree = "<group>"; };
 		A7801D7B1CAB0D5B006AB70C /* LiveGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiveGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7801D7E1CAB0D5B006AB70C /* LiveGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LiveGraph.h; path = LiveGraph/LiveGraph.h; sourceTree = "<group>"; };
 		A7801D801CAB0D5B006AB70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = LiveGraph/Info.plist; sourceTree = "<group>"; };
@@ -42,8 +44,6 @@
 		A7801D8A1CAB0D5C006AB70C /* LiveGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveGraphTests.swift; sourceTree = "<group>"; };
 		A7801D8C1CAB0D5C006AB70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A79755191CB301F000CEAD5F /* LiveGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiveGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A797551B1CB301F000CEAD5F /* LiveGraph tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveGraph tvOS.h"; sourceTree = "<group>"; };
-		A797551D1CB301F000CEAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A6D6941CAB2C3300BDFECC /* DataPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoints.swift; sourceTree = "<group>"; };
 		A7A6D6961CAB2C8800BDFECC /* DataPointsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPointsTests.swift; sourceTree = "<group>"; };
 		A7C9A6CA1CAB102D007356CF /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
@@ -83,7 +83,6 @@
 			children = (
 				A7C9A6C81CAB0E75007356CF /* Source */,
 				A7801D891CAB0D5C006AB70C /* Tests */,
-				A797551A1CB301F000CEAD5F /* LiveGraph tvOS */,
 				A7801D7C1CAB0D5B006AB70C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,15 +109,6 @@
 			path = LiveGraphTests;
 			sourceTree = "<group>";
 		};
-		A797551A1CB301F000CEAD5F /* LiveGraph tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				A797551B1CB301F000CEAD5F /* LiveGraph tvOS.h */,
-				A797551D1CB301F000CEAD5F /* Info.plist */,
-			);
-			path = "LiveGraph tvOS";
-			sourceTree = "<group>";
-		};
 		A7C9A6C81CAB0E75007356CF /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +124,7 @@
 		A7C9A6C91CAB0E8C007356CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7265A991CB6B94C00F47B6A /* Info-tvOS.plist */,
 				A7801D7E1CAB0D5B006AB70C /* LiveGraph.h */,
 				A7801D801CAB0D5B006AB70C /* Info.plist */,
 			);
@@ -275,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7265A9A1CB6B94C00F47B6A /* Info-tvOS.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +470,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "LiveGraph tvOS/Info.plist";
+				INFOPLIST_FILE = "LiveGraph/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.collectiveidea.LiveGraph-tvOS";
@@ -497,7 +489,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "LiveGraph tvOS/Info.plist";
+				INFOPLIST_FILE = "LiveGraph/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.collectiveidea.LiveGraph-tvOS";
