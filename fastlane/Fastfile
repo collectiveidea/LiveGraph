@@ -26,7 +26,8 @@ lane :release do
   ensure_git_status_clean
 
   scan(scheme: "LiveGraph iOS")
-  increment_build_number(xcodeproj: "LiveGraph.xcodeproj")
+  # increment_build_number(xcodeproj: "LiveGraph.xcodeproj")
+  increment_version_number(xcodeproj: "LiveGraph.xcodeproj")
   commit_version_bump(xcodeproj: "LiveGraph.xcodeproj")
 
   add_git_tag
