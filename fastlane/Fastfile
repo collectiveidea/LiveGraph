@@ -18,8 +18,16 @@ default_platform :ios
 desc "Test the framework"
 lane :test do
   scan(scheme: "LiveGraph iOS")
-  increment_build_number
 end
+
+desc "Release the framework" do
+  lane :release do
+    scan(scheme: "LiveGraph iOS")
+    increment_build_number
+    commit_version_bump
+  end
+end
+
 
 platform :ios do
   before_all do
