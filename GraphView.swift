@@ -8,17 +8,22 @@
 
 import UIKit
 
+@IBDesignable
 public class GraphView: UIView {
     var scrollView:UIScrollView!
     
     public var xValues:[String] = ["•","•","•","•","•","•","•"]
     public var yValues:[[Float]] = [[0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0]]
-    public var maxYSteps:Int! = 6
-    public var colors:[UIColor]! = GraphView.defaultColors(2)
+    @IBInspectable public var maxYSteps:Int = 6
+    @IBInspectable public var colors:[UIColor]! {
+        get {
+            return defaultColors()
+        }
+    }
     
-    public var leftGutterSize:CGFloat! = 36.0
-    public var bottomGutterSize:CGFloat! = 30.0
-    public var topGutterSize:CGFloat! = 15.0
+    @IBInspectable public var leftGutterSize:CGFloat = 36.0
+    @IBInspectable public var topGutterSize:CGFloat = 15.0
+    @IBInspectable public var bottomGutterSize:CGFloat = 15.0
     
     var yStepIncrement:Float!
     var yMeasurement:Float!
@@ -27,13 +32,43 @@ public class GraphView: UIView {
     private var yValuesDistanceApart:CGFloat!
     var points = [[CGPoint]]()
     
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        #if TARGET_INTERFACE_BUILDER
+            ibDesignableSetup()
+            drawExampleGraph()
+        #endif
+    }
+    
+    func ibDesignableSetup() {
+        maxYSteps = 6
+        leftGutterSize = 36.0
+        bottomGutterSize = 30.0
+        topGutterSize = 15.0
+    }
+    
+    private func drawExampleGraph() {
+        plotGraph(["one", "two", "three"], yVals: [[1.0, 2.0, 3.0], [0.5, 0.5, 2.0]])
+        setNeedsDisplay()
+    }
+    
+    func redrawGraph() {
+        plotGraph(xValues, yVals: yValues)
+        setNeedsDisplay()
+    }
     
     override public func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    public static func defaultColors(size: Int) -> [UIColor] {
+    public func defaultColors() -> [UIColor] {
         var colorArray = [UIColor]()
+        let size = xValues.count
+        
         if size < 2 {
             colorArray += [UIColor(red: 251.0/255.0, green: 246.0/255.0, blue: 0.0/255.0, alpha: 1)]
             colorArray += [UIColor(red: 24.0/255.0, green: 193.0/255.0, blue: 215.0/255.0, alpha: 1)]
@@ -55,11 +90,11 @@ public class GraphView: UIView {
         
         self.xValues = xVals
         self.yValues = yVals
-        
+
         scrollView = UIScrollView(
             frame: CGRect(
-                x: leftGutterSize!,
-                y: 0, width: CGRectGetWidth(frame) - leftGutterSize!,
+                x: leftGutterSize,
+                y: 0, width: CGRectGetWidth(frame) - leftGutterSize,
                 height: CGRectGetHeight(frame)
             )
         )
@@ -69,7 +104,7 @@ public class GraphView: UIView {
         
         addSubview(scrollView)
         
-        yValuesDistanceApart = (CGRectGetHeight(scrollView.frame) - bottomGutterSize! - topGutterSize!) / CGFloat(maxYSteps!)
+        yValuesDistanceApart = (CGRectGetHeight(scrollView.frame) - bottomGutterSize - topGutterSize) / CGFloat(maxYSteps)
         
         calculateTotalYDistance()
         
@@ -99,7 +134,7 @@ public class GraphView: UIView {
     }
     
     private func addYValues() {
-        if let maxYSteps = maxYSteps {
+
             for number in 1...maxYSteps {
                 let label = UILabel(frame: CGRectMake(0, 0, leftGutterSize, 20))
                 label.text = "\(Int(yStepIncrement! * Float((number))))"
@@ -111,7 +146,7 @@ public class GraphView: UIView {
                 
                 addHorizontalIndicator(label.center.y)
             }
-        }
+
     }
     
     private func addHorizontalIndicator(yVal:CGFloat) {

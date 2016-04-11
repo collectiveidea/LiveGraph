@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A73234541CB6F602008A539B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9A6CA1CAB102D007356CF /* GraphView.swift */; };
+		A749EB7C1CB8368F000BFFB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A749EB7B1CB8368F000BFFB3 /* Foundation.framework */; };
 		A7801D7F1CAB0D5B006AB70C /* LiveGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = A7801D7E1CAB0D5B006AB70C /* LiveGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7801D861CAB0D5C006AB70C /* LiveGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7801D7B1CAB0D5B006AB70C /* LiveGraph.framework */; };
 		A7801D8B1CAB0D5C006AB70C /* LiveGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7801D8A1CAB0D5C006AB70C /* LiveGraphTests.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		A7265A991CB6B94C00F47B6A /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "LiveGraph/Info-tvOS.plist"; sourceTree = "<group>"; };
+		A749EB7B1CB8368F000BFFB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A7801D7B1CAB0D5B006AB70C /* LiveGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiveGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7801D7E1CAB0D5B006AB70C /* LiveGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LiveGraph.h; path = LiveGraph/LiveGraph.h; sourceTree = "<group>"; };
 		A7801D801CAB0D5B006AB70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = LiveGraph/Info.plist; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A749EB7C1CB8368F000BFFB3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		A7801D711CAB0D5B006AB70C = {
 			isa = PBXGroup;
 			children = (
+				A749EB7B1CB8368F000BFFB3 /* Foundation.framework */,
 				A7C9A6C81CAB0E75007356CF /* Source */,
 				A7801D891CAB0D5C006AB70C /* Tests */,
 				A7801D7C1CAB0D5B006AB70C /* Products */,
@@ -416,6 +420,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 5;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LiveGraph/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -434,6 +439,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 5;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LiveGraph/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -470,6 +476,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 5;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "LiveGraph/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -489,6 +496,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 5;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "LiveGraph/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
