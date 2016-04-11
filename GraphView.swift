@@ -58,6 +58,8 @@ public class GraphView: UIView {
             self.yValues = yValues.map({ ary in
                 return Array(ary.suffix(dataWindow!))
             })
+            
+            self.xValuesDistanceApart = bounds.width/CGFloat(dataWindow!)
         } else {
             self.xValues = xValues
             self.yValues = yValues
