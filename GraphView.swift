@@ -150,9 +150,9 @@ public class GraphView: UIView {
     private func addXVals() {
         var tempXPositions = [CGFloat]()
         for number in 0..<xValues.count {
-            let label = UILabel(frame: CGRectMake(0, 0, 50, 20))
+            let label = UILabel(frame: CGRectMake(0, 0, 50, CGFloat(xValuesDistanceApart)/2.0))
             label.text = "\(xValues[number])"
-            label.textColor = UIColor.whiteColor()
+            label.textColor = UIColor(red: 128.0/255.0, green: 128.0/255.0, blue: 128.0/255.0, alpha: 1)
             label.font = UIFont(name: "SourceSansPro-LightIt", size: 14)
             label.textAlignment = .Center
             tempXPositions += [xValuesDistanceApart * CGFloat(number) + xValuesDistanceApart / 2]
