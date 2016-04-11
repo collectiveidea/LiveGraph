@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A749EB841CB838C5000BFFB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A749EB831CB838C5000BFFB3 /* Foundation.framework */; };
 		A79754DC1CB3016F00CEAD5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79754DB1CB3016F00CEAD5F /* AppDelegate.swift */; };
 		A79754DE1CB3016F00CEAD5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79754DD1CB3016F00CEAD5F /* ViewController.swift */; };
 		A79754E11CB3016F00CEAD5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79754DF1CB3016F00CEAD5F /* Main.storyboard */; };
 		A79754E31CB3016F00CEAD5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79754E21CB3016F00CEAD5F /* Assets.xcassets */; };
 		A79754EE1CB3016F00CEAD5F /* tvOS_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79754ED1CB3016F00CEAD5F /* tvOS_ExampleTests.swift */; };
 		A79754F91CB3016F00CEAD5F /* tvOS_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79754F81CB3016F00CEAD5F /* tvOS_ExampleUITests.swift */; };
-		A797552B1CB302C900CEAD5F /* LiveGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79755281CB302A200CEAD5F /* LiveGraph.framework */; };
-		A797552C1CB302C900CEAD5F /* LiveGraph.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A79755281CB302A200CEAD5F /* LiveGraph.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7BD49111CB864C10098DF37 /* LiveGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B2C8FF1CB85D61003ADE5C /* LiveGraph.framework */; };
+		A7BD49121CB864C10098DF37 /* LiveGraph.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7B2C8FF1CB85D61003ADE5C /* LiveGraph.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,37 +33,37 @@
 			remoteGlobalIDString = A79754D71CB3016F00CEAD5F;
 			remoteInfo = "tvOS Example";
 		};
-		A797550B1CB3019400CEAD5F /* PBXContainerItemProxy */ = {
+		A7B2C8FC1CB85D61003ADE5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A79755061CB3019300CEAD5F /* LiveGraph.xcodeproj */;
+			containerPortal = A7B2C8F61CB85D61003ADE5C /* LiveGraph.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A7801D7B1CAB0D5B006AB70C;
-			remoteInfo = LiveGraph;
+			remoteInfo = "LiveGraph iOS";
 		};
-		A797550D1CB3019400CEAD5F /* PBXContainerItemProxy */ = {
+		A7B2C8FE1CB85D61003ADE5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A79755061CB3019300CEAD5F /* LiveGraph.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A7801D851CAB0D5C006AB70C;
-			remoteInfo = LiveGraphTests;
-		};
-		A79755271CB302A200CEAD5F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A79755061CB3019300CEAD5F /* LiveGraph.xcodeproj */;
+			containerPortal = A7B2C8F61CB85D61003ADE5C /* LiveGraph.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A79755191CB301F000CEAD5F;
 			remoteInfo = "LiveGraph tvOS";
 		};
-		A79755291CB302A500CEAD5F /* PBXContainerItemProxy */ = {
+		A7B2C9001CB85D61003ADE5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A79755061CB3019300CEAD5F /* LiveGraph.xcodeproj */;
+			containerPortal = A7B2C8F61CB85D61003ADE5C /* LiveGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7801D851CAB0D5C006AB70C;
+			remoteInfo = LiveGraphTests;
+		};
+		A7B2C9021CB85D78003ADE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B2C8F61CB85D61003ADE5C /* LiveGraph.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = A79755181CB301F000CEAD5F;
 			remoteInfo = "LiveGraph tvOS";
 		};
-		A797552D1CB302C900CEAD5F /* PBXContainerItemProxy */ = {
+		A7BD49131CB864C10098DF37 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A79755061CB3019300CEAD5F /* LiveGraph.xcodeproj */;
+			containerPortal = A7B2C8F61CB85D61003ADE5C /* LiveGraph.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = A79755181CB301F000CEAD5F;
 			remoteInfo = "LiveGraph tvOS";
@@ -70,13 +71,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A797552F1CB302C900CEAD5F /* Embed Frameworks */ = {
+		A749EB891CB83A1E000BFFB3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A797552C1CB302C900CEAD5F /* LiveGraph.framework in Embed Frameworks */,
+				A7BD49121CB864C10098DF37 /* LiveGraph.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A749EB831CB838C5000BFFB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A79754D81CB3016F00CEAD5F /* tvOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79754DB1CB3016F00CEAD5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79754DD1CB3016F00CEAD5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +98,7 @@
 		A79754F41CB3016F00CEAD5F /* tvOS ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tvOS ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79754F81CB3016F00CEAD5F /* tvOS_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS_ExampleUITests.swift; sourceTree = "<group>"; };
 		A79754FA1CB3016F00CEAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A79755061CB3019300CEAD5F /* LiveGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LiveGraph.xcodeproj; path = ../LiveGraph.xcodeproj; sourceTree = "<group>"; };
+		A7B2C8F61CB85D61003ADE5C /* LiveGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LiveGraph.xcodeproj; path = ../LiveGraph.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A797552B1CB302C900CEAD5F /* LiveGraph.framework in Frameworks */,
+				A749EB841CB838C5000BFFB3 /* Foundation.framework in Frameworks */,
+				A7BD49111CB864C10098DF37 /* LiveGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +131,8 @@
 		A79754CF1CB3016F00CEAD5F = {
 			isa = PBXGroup;
 			children = (
-				A79755061CB3019300CEAD5F /* LiveGraph.xcodeproj */,
+				A7B2C8F61CB85D61003ADE5C /* LiveGraph.xcodeproj */,
+				A749EB831CB838C5000BFFB3 /* Foundation.framework */,
 				A79754DA1CB3016F00CEAD5F /* tvOS Example */,
 				A79754EC1CB3016F00CEAD5F /* tvOS ExampleTests */,
 				A79754F71CB3016F00CEAD5F /* tvOS ExampleUITests */,
@@ -176,12 +180,12 @@
 			path = "tvOS ExampleUITests";
 			sourceTree = "<group>";
 		};
-		A79755071CB3019300CEAD5F /* Products */ = {
+		A7B2C8F71CB85D61003ADE5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A797550C1CB3019400CEAD5F /* LiveGraph.framework */,
-				A797550E1CB3019400CEAD5F /* LiveGraphTests.xctest */,
-				A79755281CB302A200CEAD5F /* LiveGraph.framework */,
+				A7B2C8FD1CB85D61003ADE5C /* LiveGraph.framework */,
+				A7B2C8FF1CB85D61003ADE5C /* LiveGraph.framework */,
+				A7B2C9011CB85D61003ADE5C /* LiveGraphTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,13 +200,13 @@
 				A79754D41CB3016F00CEAD5F /* Sources */,
 				A79754D51CB3016F00CEAD5F /* Frameworks */,
 				A79754D61CB3016F00CEAD5F /* Resources */,
-				A797552F1CB302C900CEAD5F /* Embed Frameworks */,
+				A749EB891CB83A1E000BFFB3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A797552A1CB302A500CEAD5F /* PBXTargetDependency */,
-				A797552E1CB302C900CEAD5F /* PBXTargetDependency */,
+				A7B2C9031CB85D78003ADE5C /* PBXTargetDependency */,
+				A7BD49141CB864C10098DF37 /* PBXTargetDependency */,
 			);
 			name = "tvOS Example";
 			productName = "tvOS Example";
@@ -281,8 +285,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A79755071CB3019300CEAD5F /* Products */;
-					ProjectRef = A79755061CB3019300CEAD5F /* LiveGraph.xcodeproj */;
+					ProductGroup = A7B2C8F71CB85D61003ADE5C /* Products */;
+					ProjectRef = A7B2C8F61CB85D61003ADE5C /* LiveGraph.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -295,25 +299,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A797550C1CB3019400CEAD5F /* LiveGraph.framework */ = {
+		A7B2C8FD1CB85D61003ADE5C /* LiveGraph.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = LiveGraph.framework;
-			remoteRef = A797550B1CB3019400CEAD5F /* PBXContainerItemProxy */;
+			remoteRef = A7B2C8FC1CB85D61003ADE5C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A797550E1CB3019400CEAD5F /* LiveGraphTests.xctest */ = {
+		A7B2C8FF1CB85D61003ADE5C /* LiveGraph.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LiveGraph.framework;
+			remoteRef = A7B2C8FE1CB85D61003ADE5C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7B2C9011CB85D61003ADE5C /* LiveGraphTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = LiveGraphTests.xctest;
-			remoteRef = A797550D1CB3019400CEAD5F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A79755281CB302A200CEAD5F /* LiveGraph.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = LiveGraph.framework;
-			remoteRef = A79755271CB302A200CEAD5F /* PBXContainerItemProxy */;
+			remoteRef = A7B2C9001CB85D61003ADE5C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -383,15 +387,15 @@
 			target = A79754D71CB3016F00CEAD5F /* tvOS Example */;
 			targetProxy = A79754F51CB3016F00CEAD5F /* PBXContainerItemProxy */;
 		};
-		A797552A1CB302A500CEAD5F /* PBXTargetDependency */ = {
+		A7B2C9031CB85D78003ADE5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "LiveGraph tvOS";
-			targetProxy = A79755291CB302A500CEAD5F /* PBXContainerItemProxy */;
+			targetProxy = A7B2C9021CB85D78003ADE5C /* PBXContainerItemProxy */;
 		};
-		A797552E1CB302C900CEAD5F /* PBXTargetDependency */ = {
+		A7BD49141CB864C10098DF37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "LiveGraph tvOS";
-			targetProxy = A797552D1CB302C900CEAD5F /* PBXContainerItemProxy */;
+			targetProxy = A7BD49131CB864C10098DF37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
