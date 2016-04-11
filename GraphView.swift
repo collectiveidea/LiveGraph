@@ -11,6 +11,8 @@ import UIKit
 public class GraphView: UIView {
     var scrollView:UIScrollView!
     
+    public var dataWindow: Int?
+    
     public var xValues:[String] = ["•","•","•","•","•","•","•"]
     public var yValues:[[Float]] = [[0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0]]
     public var maxYSteps:Int! = 6
@@ -50,11 +52,22 @@ public class GraphView: UIView {
         return colorArray
     }
     
+    public func setDataValues(xValues: [String], yValues: [[Float]]) {
+        if (dataWindow != nil) {
+            self.xValues = Array(xValues.suffix(dataWindow!))
+            self.yValues = yValues.map({ ary in
+                return Array(ary.suffix(dataWindow!))
+            })
+        } else {
+            self.xValues = xValues
+            self.yValues = yValues
+        }
+    }
+    
     public func plotGraph(xVals:[String], yVals:[[Float]]) {
         destroyOldGraph()
         
-        self.xValues = xVals
-        self.yValues = yVals
+        setDataValues(xVals, yValues: yVals)
         
         scrollView = UIScrollView(
             frame: CGRect(
