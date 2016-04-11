@@ -29,5 +29,19 @@ class GraphViewTests: XCTestCase {
         XCTAssertEqual(subject.topGutterSize, 15.0)
     }
     
-
+    
+    func testSettingWindow() {
+        // Setting a window will only show the most recent yValues
+        let xVals = ["one", "two", "three", "four", "five"]
+        let yVals: [[Float]] = [[1.0, 2.0, 3.0, 4.0, 5.0], [2.0, 4.0, 6.0, 8.0, 10.0]]
+        
+        let subject = GraphView()
+        subject.dataWindow = 3 // Limit the plotting to 3 points per line
+        
+        subject.plotGraph(xVals, yVals: yVals)
+        
+        XCTAssertEqual(subject.xValues, ["three", "four", "five"])
+        XCTAssertEqual(subject.yValues[0], [3.0, 4.0, 5.0])
+        XCTAssertEqual(subject.yValues[1], [6.0, 8.0, 10.0])
+    }
 }
